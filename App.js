@@ -9,7 +9,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Home from './src/Home/Home';
 import Cadastro1Item from  './src/Cadastro1Item/Cadastro1Item';
 import ExibirRegistros from './src/ExibirRegistros/ExibirRegistros';
-// import PesquisaFilme from '.src/PesquisaFilme';
+ import PesquisaFilme from './src/PesquisaFilme/Pesquisa';
 
 const Stack = createNativeStackNavigator();
 
@@ -30,27 +30,27 @@ export default function App() {
             name='Cadastro1Item'
             component={Cadastro1Item}
             options={{
-              title: 'Cadastro1Item' ,
+              title: 'Cadastre um Filme' ,
             }}
           />
           <Stack.Screen
             name='ExibirRegistros'
             component={ExibirRegistros}
             options={{
-              title: 'ExibirRegistros',
+              title: 'Exibir Registros',
             }}
           />
  
-           {/* <Stack.Screen
+           <Stack.Screen
             name="PesquisaFilme"
             component={PesquisaFilme}
             options={{
-              title: 'PesquisaFilme',
+              title: 'Pesquise um Filme',
               // headerLeft: () => (
               //   <View style={{ paddingHorizontal: 20 }}><Text>Ícone</Text></View>
               // )
             }}
-          />      */}
+          />      
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
